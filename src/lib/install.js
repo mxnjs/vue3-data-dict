@@ -27,7 +27,7 @@ export default function (app, options) {
   app.mixin({
     data() {
       // 未作dicts声明时，data中不加入dict
-      if (this.$options.dicts === undefined || this.$options.dicts === null) {
+      if (!this.$options || this.$options.dicts === undefined || this.$options.dicts === null) {
         return {}
       }
       const dict = new DataDict({
