@@ -1,0 +1,43 @@
+{
+  "name": "vue3-data-dict",
+  "version": "1.0.1",
+  "description": "Data dict for Vue3",
+  "main": "src/index.js",
+  "unpkg": "dist/vue-data-dict.js",
+  "jsdelivr": "dist/vue-data-dict.js",
+  "sideEffects": false,
+  "files": [
+    "src",
+    "dist",
+    "LICENSE",
+    "postinstall.js"
+  ],
+  "scripts": {
+    "build": "webpack --mode production",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "postinstall": "node ./postinstall"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mxnjs/vue3-data-dict.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mxnjs/vue3-data-dict/issues"
+  },
+  "homepage": "https://github.com/mxnjs/vue3-data-dict#readme",
+  "keywords": [
+    "dict",
+    "data dict",
+    "Vue"
+  ],
+  "author": "Moxun<mxnstrive@gmail.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "vue": "^3.0.1"
+  }
+}
